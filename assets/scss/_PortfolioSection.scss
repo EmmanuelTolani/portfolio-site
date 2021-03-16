@@ -1,0 +1,185 @@
+#portfolio-section {
+  padding: 80px 15px;
+  margin-top: 160px;
+}
+#portfolio-section .header-title{
+  h1 {
+    padding-bottom: 15px;
+    border-bottom: 4px solid #f6f6f6;
+    color: #919191;
+    text-align: left;
+    position: relative;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    z-index: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  padding: 75px 0;
+}
+
+#portfolio-section .title {
+position: relative;
+display: flex;
+width: 200px;
+height: 200px;
+justify-content: center;
+align-items: center;
+margin:0 auto;
+}
+
+#portfolio-section .portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 10px;
+}
+#portfolio-section a{
+  padding: 0;
+}
+
+#portfolio-section .portfolio-container .box {
+  display: block;
+  background: black;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+#portfolio-section .portfolio-container .box:hover {
+  background: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+}
+
+#portfolio-section .portfolio-container .box.image1 {
+grid-column: 1 / 3;
+grid-row: 1 / 2;
+}
+
+#portfolio-section .portfolio-container .box.image1 .image {
+background:
+ url("https://cdn.dribbble.com/users/4438388/screenshots/14989506/media/c2014dea7940683c75823d1e84f97a2a.jpg");
+height: 100%;
+width: 100%;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+grid-column: 1 / 4;
+grid-row: 1 / 2;
+}
+#portfolio-section .portfolio-container .box .image .hover-bg{
+  background: rgba(255, 255, 255, 0);
+  padding: 10px 20px;
+  transition: all .4s ease-in-out;
+}
+#portfolio-section .portfolio-container .box:hover .image .hover-bg{
+  background: rgba(255, 255, 255, .6);
+  padding: 10px 20px;
+}
+
+
+#portfolio-section .portfolio-container .box .image .hover-bg .title .text{
+background: $yellowColor;
+border-radius: 5px;
+padding: 10px 20px;
+transform: translate3d(0, 400px,0);
+transition: all .4s ease-in-out .2s;
+opacity: 0;
+}
+#portfolio-section .portfolio-container .box:hover .image .hover-bg .title .text{
+transform: translate3d(0, 0,0);
+opacity: 1;
+}
+
+#portfolio-section .portfolio-container .box.image2 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+
+}
+#portfolio-section .portfolio-container .box.image2 .image {
+  background:
+   url("https://cdn.dribbble.com/users/3692521/screenshots/14990726/media/d9f7b233a49f39353f279f7e7e08e92e.png?compress=1&resize=400x300");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 55%;
+  background-repeat: no-repeat;
+  grid-column: 1/3;
+  grid-row: 3/4;
+
+}
+
+#portfolio-section .portfolio-container .box.image3 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+#portfolio-section .portfolio-container .box.image3 .image {
+  background:
+   url("https://cdn.dribbble.com/users/77121/screenshots/13940209/media/5c1c1d9c9227978b5e2c7c832ee7baf1.gif");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 65%;
+  background-repeat: no-repeat;
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+#portfolio-section .portfolio-container .box.image5 {
+
+}
+#portfolio-section .portfolio-container .box.image6 {
+}
+
+#portfolio-section .portfolio-section-container .box .fas {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+#portfolio-section .portfolio-section-container .box h5 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+#portfolio-section .portfolio-section-container .box p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #b3b3b3;
+}
+
+#portfolio-section .portfolio-section-container .box.blue {
+  background: rgba(255, 255, 255, 0);
+}
+#portfolio-section .portfolio-section-container .box.blue {
+  border-bottom: 2px solid#52b8ff;
+}
+#portfolio-section .portfolio-section-container .box.red {
+  border-bottom: 2px solid#ff5253;
+}
+#portfolio-section .portfolio-section-container .box.yellow {
+  border-bottom: 2px solid#ffc853;
+}
+
+/*Tablets */
+@media only screen and (max-width: 960px) {
+  #portfolio-section .portfolio-section-container {
+    grid-template-columns: 100%;
+  }
+  #portfolio-section .portfolio-section-container .box {
+    background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+  }
+}
+/* Phones */
+@media only screen and (max-width: 767px) {
+}

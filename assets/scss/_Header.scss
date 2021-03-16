@@ -1,0 +1,96 @@
+header {
+  padding: 100px 0;
+  background: $darkBG;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  .logo {
+     .name {
+       font-size: 28px;
+       color: #ffff;
+       border-bottom: 3px solid #4b6cc1;
+       letter-spacing: .063em;
+       font-weight: 500;
+      }
+    }
+  .header-menu {
+    color: #ababab;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     a {
+       font-size: 22px;
+       padding: 0 30px;
+       font-weight: 300;
+       text-transform: capitalize;
+        &:hover {
+          color: white;
+        }
+      }
+  }
+  .menu-btn {
+  font-weight: 700;
+  color: $yellowColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 1.6rem;
+  display: none;
+  cursor: pointer;
+}
+}
+.mobile-menu {
+  display: none;
+  background: white;
+  flex-direction: column;
+  padding: 40px 0;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  z-index: 10;
+  transform: translate3d(-100%, 0, 0);
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+    .active {
+    transform: translate3d(0, 0, 0);
+  }
+   a {
+    padding: 15px;
+     &:hover {
+    color: white;
+    background: $yellowColor;
+    padding: 15px 0;
+    }
+  }
+}
+/* header .line{
+  border: 1px solid #ff5253;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+} */
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+}
+/* Phones */
+@media only screen and (max-width: 767px) {
+  header .header-menu {
+    display: none;
+  }
+  header .menu-btn {
+    display: flex;
+  }
+  header .logo {
+    font-size: 1.3rem;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+}

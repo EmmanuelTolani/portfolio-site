@@ -1,0 +1,33 @@
+@import "reset";
+@import "variables";
+@import "grid";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap');
+@import "Top";
+@import "PortfolioSection";
+@import "Footer";
+@import "Header";
+@import "Blog";
+@import "Skills";
+@import "Copyright";
+@import "global";
+
+
+body{
+  font-family: "Rubik","Arial",sans-serif;
+  color: #F2F2F2;
+  letter-spacing: .063em;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Rubik","Arial",sans-serif;
+}
+.container {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.a{
+  text-decoration: none !important;
+}

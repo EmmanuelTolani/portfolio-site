@@ -1,0 +1,110 @@
+#skills{
+    padding: 80px 0 0 0 ;
+  .container {
+  max-width: 1200px;
+}
+.main-container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.title{
+  padding: 75px 0;
+  h1{
+    padding-bottom: 15px;
+    border-bottom: 4px solid #f6f6f6;
+    color: #919191;
+    text-align: left;
+    position: relative;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    z-index: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+}
+.skillset-container{
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr ;
+  grid-gap: 40px;
+  border-radius: 60px;
+    .skill{
+      border-top: 5px solid $blueColor;
+      padding: 10%;
+      height: 100%;
+      width: 100%;
+      border-radius: 8px;
+      background: #f6f6f6;
+      color: black;
+      text-align: center;
+      .fas{
+        position: relative;
+        color: $blueColor;
+        font-size: 4rem !important;
+        padding: 0 0 20px 0px;
+        font-size: 1rem;
+        border-bottom: solid $blueColor;
+        border-bottom-width: 3px;
+      }
+      h4{
+          padding: 20px 0;
+          font-size: 2.125rem !important;
+          font-weight: 400;
+          text-transform: capitalize;
+      }
+      .secondary-header{
+        font-size: 1.625rem;
+        margin: 20px 0 40px 0;
+        font-weight: 300;
+      }
+      p{
+          font-size: 1.3rem;
+          line-height: 150%;
+          margin: 0;
+          font-weight: 200;
+      }
+
+    }
+}
+.button{
+  margin: 0 auto;
+  background-color: $blueColor;
+  padding: 24px 46px;
+  border-radius: 1000px;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    background: white;
+    border: 2px solid $blueColor;
+    a{
+      color: $blueColor;
+    }
+  }
+    a{
+      text-align: center;
+      color: white;
+      text-decoration: none !important;
+      border-bottom: none;
+      }
+    }
+}
+
+
+/*Tablets */
+@media only screen and (max-width: 960px) {
+}
+/* Phones */
+@media only screen and (max-width: 767px) {
+  #top .container {
+    padding: 0 0 80px;
+  }
+  #top .info {
+    padding: 10px;
+  }
+
+  #top .img .background-img {
+    width: 100%;
+    height: 100vh;
+  }
+}

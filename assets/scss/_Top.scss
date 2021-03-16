@@ -1,0 +1,156 @@
+#top {
+  &:before,
+  &:after {
+    background: $darkBG;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+  }
+
+  &:before {
+    top: 40%;
+    transform: skewY(4deg);
+    transform-origin: 100% 0;
+  }
+
+  &:after {
+    bottom: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+  }
+  .container {
+  padding: 80px 0 70px;
+}
+.top-container{
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  max-width: 1200px;
+}
+ .info {
+  padding: 20px 45px 20px 0;
+ h1 {
+   margin-block-start: 0.83em;
+margin-block-end: 0.83em;
+  padding: 10px 0;
+  position: relative;
+  font-size: 4.5rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: white;
+  margin: 1rem 0 0.1rem 0;
+  text-align: left;
+  z-index: 1;
+  top: -10px;
+}
+  h2 {
+  position: relative;
+  color: $blueColor;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 140%;
+  margin-bottom: 4rem;
+  z-index: 1;
+  text-align: left;
+  }
+  p {
+  position: relative;
+  color: $basicFontColor;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 140%;
+  margin-bottom: 4rem;
+  z-index: 1;
+  text-align: left;
+}
+  a {
+  position: relative;
+  font-size: 1.75rem;
+  color: #16171b;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid #000;
+  z-index: 1;
+  letter-spacing: 2px;
+  text-align: left;
+  float: left;
+}
+
+.button{
+  background-color: $blueColor;
+  padding: 24px 46px;
+  border-radius: 1000px;
+  float: left;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover{
+    background: $darkBG;
+    border: 3px solid $blueColor;
+    a{
+      color: white;
+    }
+  }
+    a{
+      font-weight: 400;
+      text-align: center;
+      color: white;
+      text-decoration: none !important;
+      border-bottom: none;
+      letter-spacing: 0;
+      text-transform: capitalize;
+      }
+    }
+  }
+
+.img {
+  position: relative;
+    background: #121316;
+    // margin-bottom: -100px;
+    // padding-top: 10%;
+     height: 485px;
+    max-width: 424px;
+
+    .background-img {
+      box-shadow: 0 1px 5px rgb(0, 0, 0 / 5%), 0 5px 30px rgb(0, 0, 0 / 20%);
+      border-radius: 3px;
+    -webkit-filter: contrast(120%); /* Safari 6.0 - 9.0 */
+    filter: contrast(120%);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0%;
+    right: 0%;
+    top:10%;
+    background: url("/img/brandin-img.jpg");
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: 125%;
+    width: 80%;
+    height: 100%;
+  }
+}
+}
+
+/*Tablets */
+@media only screen and (max-width: 960px) {
+}
+/* Phones */
+@media only screen and (max-width: 767px) {
+  #top .container {
+    padding: 0 0 80px;
+  }
+  #top .info {
+    padding: 10px;
+  }
+
+  #top .img .background-img {
+    width: 100%;
+    height: 100vh;
+  }
+}

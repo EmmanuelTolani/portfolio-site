@@ -1,0 +1,153 @@
+#blog-section{
+    padding: 20px 0 150px 0;
+  .container {
+  max-width: 1380px;
+  overflow: hidden;
+.title{
+  padding: 75px 0;
+  h1{
+    padding-bottom: 15px;
+    border-bottom: 4px solid #f6f6f6;
+    color: #919191;
+    text-align: left;
+    position: relative;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    z-index: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+}
+.main-container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.blog-container{
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 700px ;
+  grid-gap: 0 40px;
+  border-radius: 60px;
+    .blog{
+      border-radius: 6px;
+      a{
+        height: 100%;
+        border-radius: 6px 6px 0 0;
+        padding: 0;
+      }
+    .img{
+      background: url("https://commoncog.com/blog/content/images/2018/09/417yjF-Z5zL.jpg");
+      height: 50%;
+      width: 100%;
+      background-position: top center;
+      background-size: cover;
+      opacity:100%;
+      &:hover{
+        cursor: pointer;
+        opacity: 60%;
+      }
+    }
+    .img-2{
+      background: url("https://images-na.ssl-images-amazon.com/images/I/81CO4EqaotL.jpg");
+      height: 50%;
+      width: 100%;
+      background-position: top center;
+      background-size: cover;
+      opacity:100%;
+      &:hover{
+        cursor: pointer;
+        opacity: 60%;
+      }
+    }
+    .details{
+      border-radius: 6px 6px 0 0;
+      padding: 48px;
+      width:100%;
+      height: 350px;
+      background: #f6f6f6;
+      text-align: center;
+      .header{
+        font-size: 2.125rem;
+        color: $headerFontColor;
+        font-weight: 400;
+        &:hover{
+          font-weight: 400;
+          color: $basicFontColor;
+          text-decoration: none !important;
+        }
+      }
+
+
+      .subheading{
+        color: #191a1d;
+        font-size: 1.625rem;
+        margin: 20px 0;
+      }
+      p{
+        margin-top: 20px 0;
+        color: #5e5e5e;
+        font-size: 1.375rem;
+        line-height: 160%;
+        font-weight: 300;
+        .category{
+          font-size: 1.625rem;
+          color: $blueColor;
+          transition: all .5s ease-in-out;
+          text-transform: none;
+          font-weight: 200;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+        &:hover{
+          text-decoration: underline;
+          font-weight: 400;
+        }
+      }
+      }
+    }
+  }
+
+}
+.button{
+  margin: 0 auto;
+  background-color: $blueColor;
+  padding: 24px 46px;
+  border-radius: 1000px;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    background: white;
+    border: 2px solid $blueColor;
+    a{
+      color: $blueColor;
+    }
+  }
+    a{
+      text-align: center;
+      color: white;
+      text-decoration: none !important;
+      border-bottom: none;
+      }
+    }
+
+}
+}
+/*Tablets */
+@media only screen and (max-width: 960px) {
+}
+/* Phones */
+@media only screen and (max-width: 767px) {
+  #top .container {
+    padding: 0 0 80px;
+  }
+  #top .info {
+    padding: 10px;
+  }
+
+  #top .img .background-img {
+    width: 100%;
+    height: 100vh;
+  }
+}
